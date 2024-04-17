@@ -52,7 +52,7 @@ def get_sm64_operation(messages):
     messages.append(vision_message)
 
     response = client.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-4-vision-preview",
         messages=messages,
         presence_penalty=1,
         frequency_penalty=1,
@@ -105,7 +105,7 @@ def get_poker_operation(move_or_not_messages):
     move_or_not_messages.append(vision_message)
 
     response = client.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-4-vision-preview",
         messages=move_or_not_messages,
         presence_penalty=1,
         frequency_penalty=1,
