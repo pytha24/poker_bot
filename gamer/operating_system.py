@@ -37,7 +37,10 @@ class OperatingSystem:
             y = convert_percent_to_decimal(click_detail.get("y"))
 
             if click_detail and isinstance(x, float) and isinstance(y, float):
-                self.click_at_percentage(x, y)
+                #self.click_at_percentage(x, y)
+                pyautogui.moveTo(x, y, duration=0.2)
+                pyautogui.click(x, y)
+                pyautogui.moveTo(500, 500, duration=0.2)
 
         except Exception as e:
             print("[OperatingSystem][mouse] error:", e)
