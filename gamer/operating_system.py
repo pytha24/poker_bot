@@ -29,7 +29,8 @@ class OperatingSystem:
             print("[OperatingSystem][press] error:", e)
 
     def capture_screen(self, file_path):
-        subprocess.run(["screencapture", "-C", file_path])
+        #subprocess.run(["screencapture", "-C", file_path])
+        subprocess.run(["nircmd.exe", "savescreenshot", file_path])
 
     def mouse(self, click_detail):
         try:
