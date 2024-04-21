@@ -26,8 +26,9 @@ def get_sm64_operation(messages):
     if config.verbose:
         print("[poker-agent] get_sm64_operation")
 
+    screenshots_dir = "Toshiba"
     #screenshots_dir = "screenshots"
-    screenshots_dir = "C:\\Users\\Toshiba\\Documents\\Screenshots"
+    
     if not os.path.exists(screenshots_dir):
         os.makedirs(screenshots_dir)
 
@@ -80,7 +81,8 @@ def get_poker_operation(move_or_not_messages):
     if config.verbose:
         print("[poker-agent] get_poker_operation")
 
-    screenshots_dir = "screenshots"
+    #screenshots_dir = "screenshots"
+    screenshots_dir = "Toshiba"
     if not os.path.exists(screenshots_dir):
         os.makedirs(screenshots_dir)
 
