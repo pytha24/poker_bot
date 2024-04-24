@@ -129,15 +129,15 @@ def get_poker_operation(move_or_not_messages):
     actionArguments = json.loads(content_json.get("boardState"))
 
     if not actionArguments:
-        content_json["x"] = "0.50"
-        content_json["y"] = "0.50"
+        content_json["x"] = "500"
+        content_json["y"] = "500"
         return content_json
 
     gameOver = actionArguments.get("isGameOver", False)
 
     if gameOver:
-        content_json["x"] = "0.50"
-        content_json["y"] = "0.50"
+        content_json["x"] = "500"
+        content_json["y"] = "500"
         return content_json
 
     processed_content = process_ocr(
@@ -171,8 +171,8 @@ def process_ocr(messages, content, content_str, screenshot_filename):
 
 
     if not holeCards:
-        content["x"] = "0.50"
-        content["y"] = "0.50"
+        content["x"] = "500"
+        content["y"] = "500"
         return content
     
     raiseAmounts = [raise_['raise'] for raise_ in whoRaised]
