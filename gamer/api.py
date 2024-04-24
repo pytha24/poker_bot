@@ -233,13 +233,13 @@ def process_ocr(messages, content, content_str, screenshot_filename):
 
     if text_to_click == "Check":
         #coordinates = { 'x': 0.556, 'y': 0.86}
-        coordinates = { 'x': 730, 'y': 830}
+        coordinates = { 'x': 1030, 'y': 830}
     elif text_to_click == "Call":
         #coordinates = { 'x': 0.556, 'y': 0.86}
-        coordinates = { 'x': 730, 'y': 830}
+        coordinates = { 'x': 1030, 'y': 830}
     elif text_to_click == "Fold":
         #coordinates = { 'x': 0.421, 'y': 0.86}
-        coordinates = { 'x': 500, 'y': 830}
+        coordinates = { 'x': 830, 'y': 830}
 
     # add `coordinates`` to `content`
     content["x"] = coordinates["x"]
